@@ -46,6 +46,6 @@ class MilestonesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def milestone_params
-      params.require(:milestone).permit(:title, :description, :date, :kid_id)
+      params.require(:milestone).permit(:title, :description, :date, :kid_id, :image)
     end
 end
